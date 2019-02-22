@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Question #</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div ion-item *ngFor="let survey of Questions">
+      <div class="item-note" item-left>
+        {{ survey.question }}
+      </div>
+    </div>
+</ion-content>
+
+ <!--<ion-content >-->
+      <!--<ion-card *ngFor="let survey of Questions">-->
+      <!--<ion-list>-->
+         <!--<ion-item>{{ survey.question }}</ion-item>-->
+      <!--</ion-list>-->
+      <!--</ion-card>-->
+
+  <!--<ion-infinite-scroll (ionInfinite)="doInfinite($event)">-->
+    <!--<ion-infinite-scroll-content></ion-infinite-scroll-content>-->
+  <!--</ion-infinite-scroll>-->
+<!--</ion-content>-->
